@@ -1,0 +1,16 @@
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\bin\Debug\netcoreapp3.1\photo-album-LT.exe
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\bin\Debug\netcoreapp3.1\photo-album-LT.deps.json
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\bin\Debug\netcoreapp3.1\photo-album-LT.runtimeconfig.json
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\bin\Debug\netcoreapp3.1\photo-album-LT.runtimeconfig.dev.json
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\bin\Debug\netcoreapp3.1\photo-album-LT.dll
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\bin\Debug\netcoreapp3.1\photo-album-LT.pdb
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\obj\Debug\netcoreapp3.1\photo-album-LT.csprojAssemblyReference.cache
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\obj\Debug\netcoreapp3.1\photo-album-LT.AssemblyInfoInputs.cache
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\obj\Debug\netcoreapp3.1\photo-album-LT.AssemblyInfo.cs
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\obj\Debug\netcoreapp3.1\photo-album-LT.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\obj\Debug\netcoreapp3.1\photo-album-LT.dll
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\obj\Debug\netcoreapp3.1\photo-album-LT.pdb
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\obj\Debug\netcoreapp3.1\photo-album-LT.genruntimeconfig.cache
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\obj\Debug\netcoreapp3.1\photo-album-LT.csproj.CopyComplete
+C:\Users\Andrew\source\repos\photo-album-LT\photo-album-LT\bin\Debug\netcoreapp3.1\ConsoleTables.dll
