@@ -4,11 +4,12 @@ using System.Text;
 using System.Net;
 using Newtonsoft.Json.Linq;
 using System.Text.RegularExpressions;
+using System.Runtime.CompilerServices;
 
 namespace photo_album_LT
 {
     // This class is utlizied to parse JSON files
-    class JsonParser
+    public class JsonParser
     {
         private string url;
 
