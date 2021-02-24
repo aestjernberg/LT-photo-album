@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace photo_album_LT
 {
+    // This class is utlizied to parse JSON files
     class JsonParser
     {
         private string url;
