@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Net;
 using Newtonsoft.Json.Linq;
 using System.Text.RegularExpressions;
-using System.Runtime.CompilerServices;
 
 namespace photo_album_LT
 {

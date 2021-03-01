@@ -15,6 +15,7 @@ namespace photo_album_LT
             string albumID;
             string flag;
             JsonParser jp = new JsonParser();
+            PrintHelper ph = new PrintHelper();
 
             // Display instructions for the user
             Console.WriteLine("Instructions:");
@@ -50,47 +51,18 @@ namespace photo_album_LT
 
                 if (flag == "i")
                 {
-                    printInfoByPhotoID(jp, albumID);
+                    ConsoleTable table = ph.orderInfoByPhotoID(jp, albumID);
+                    table.Write(Format.Minimal);
                 }
                 else if (flag == "t")
                 {
-                    printInfoByTitle(jp, albumID);
+                    ConsoleTable table = ph.orderInfoByTitle(jp, albumID);
+                    table.Write(Format.Minimal);
                 }
 
                 Console.WriteLine("Please enter your desired command:");
                 input = Console.ReadLine();
             }
-        }
-
-        public static void printInfoByPhotoID(JsonParser jp, string albumID)
-        {
-            jp.setURL(albumID);
-            Console.Write("\r\n");
-
-            var table = new ConsoleTable("PHOTO ID", "TITLE");
-            foreach (JObject item in jp.getJsonData())
-            {
-                int id = (int)item.GetValue("id");
-                string title = item.GetValue("title").ToString();
-                table.AddRow(id, title);
-            }
-            table.Write(Format.Minimal);
-        }
-
-        public static void printInfoByTitle(JsonParser jp, string albumID)
-        {
-            jp.setURL(albumID);
-            JArray array = jp.getJsonData();
-            JArray sorted = new JArray(array.OrderBy(obj => (string)obj["title"]));
-
-            var table = new ConsoleTable("PHOTO ID", "TITLE");
-            foreach (JObject item in sorted)
-            {
-                int id = (int)item.GetValue("id");
-                string title = item.GetValue("title").ToString();
-                table.AddRow(id, title);
-            }
-            table.Write(Format.Minimal);
         }
     }
 }
