@@ -30,6 +30,8 @@ namespace photo_album_LT
             // Continue looping through the program until the user enters a 'Q'
             while (input != "Q" && input != "q")
             {
+                numSpaces = input.Count(c => c == ' ');
+
                 // Ensure that only 1 space was entered by the user
                 while (numSpaces != 1)
                 {
