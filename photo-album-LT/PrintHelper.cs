@@ -5,6 +5,7 @@ using Newtonsoft.Json.Linq;
 
 namespace photo_album_LT
 {
+    // This class is used to print album information in an appealing, easy-to-read format
     public class PrintHelper
     {
         public ConsoleTable orderInfoByPhotoID(JsonParser jp, string albumID)

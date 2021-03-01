@@ -51,11 +51,14 @@ namespace photo_album_LT
                     flag = Console.ReadLine();
                 }
 
+                // Print the photo information in numerical order based on photo ID
                 if (flag == "i")
                 {
                     ConsoleTable table = ph.orderInfoByPhotoID(jp, albumID);
                     table.Write(Format.Minimal);
                 }
+
+                // Print the photo information in alphabetical order based on photo title
                 else if (flag == "t")
                 {
                     ConsoleTable table = ph.orderInfoByTitle(jp, albumID);
