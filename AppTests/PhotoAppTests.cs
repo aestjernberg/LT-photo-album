@@ -1,7 +1,6 @@
 using ConsoleTables;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json.Linq;
-using System;
 
 namespace AppTests
 {
@@ -13,7 +12,7 @@ namespace AppTests
         {
             photo_album_LT.JsonParser jp = new photo_album_LT.JsonParser();
 
-            jp.setURL("72");
+            jp.getJsonData("72");
             Assert.AreEqual(jp.getURL(), "https://jsonplaceholder.typicode.com/photos?albumId=72");
         }
 
@@ -22,8 +21,7 @@ namespace AppTests
         {
             photo_album_LT.JsonParser jp = new photo_album_LT.JsonParser();
 
-            jp.setURL("49");
-            JArray jsonData = jp.getJsonData();
+            JArray jsonData = jp.getJsonData("49");
             Assert.IsInstanceOfType(jsonData, typeof(JArray));
         }
 

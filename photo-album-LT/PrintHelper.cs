@@ -10,11 +10,11 @@ namespace photo_album_LT
     {
         public ConsoleTable orderInfoByPhotoID(JsonParser jp, string albumID)
         {
-            jp.setURL(albumID);
+            JArray array = jp.getJsonData(albumID);
             Console.Write("\r\n");
 
             var table = new ConsoleTable("PHOTO ID", "TITLE");
-            foreach (JObject item in jp.getJsonData())
+            foreach (JObject item in array)
             {
                 int id = (int)item.GetValue("id");
                 string title = item.GetValue("title").ToString();
@@ -25,8 +25,7 @@ namespace photo_album_LT
 
         public ConsoleTable orderInfoByTitle(JsonParser jp, string albumID)
         {
-            jp.setURL(albumID);
-            JArray array = jp.getJsonData();
+            JArray array = jp.getJsonData(albumID);
             JArray sorted = new JArray(array.OrderBy(obj => (string)obj["title"]));
 
             var table = new ConsoleTable("PHOTO ID", "TITLE");
